@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CovidTrack - Update COVID Cases</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/styles.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">CovidTrack</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./allcases.html">All Cases Monitor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./vaccination-status.html">Vaccination Status Monitor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./hospitalStatus.html">Hospital Resources Monitor</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="container mt-5">
+            <h1 class="text-center">Update COVID Case</h1>
+            <form id="update-case-form" class="mt-4">
+                <div class="mb-3">
+                    <label for="region" class="form-label">Region Name</label>
+                    <select class="form-select" id="region" required>
+                        <option value="" disabled selected>Select a region</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="coimbatore">Coimbatore</option>
+                        <option value="tanjore">Tanjore</option>
+                        <option value="trichy">Trichy</option>
+                        <option value="vellore">Vellore</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="age" required>
+                </div>
+                <div class="mb-3">
+                    <label for="sex" class="form-label">Sex</label>
+                    <select class="form-select" id="sex" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="dosage" class="form-label">Dosage</label>
+                    <input type="number" class="form-control" id="dosage" required>
+                </div>
+                <div class="mb-3">
+                    <label for="covidStatus" class="form-label">COVID Status</label>
+                    <select class="form-select" id="covidStatus" required>
+                        <option value="Active">Active</option>
+                        <option value="Recovered">Recovered</option>
+                        <option value="Dead">Dead</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="vaccineStatus" class="form-label">Vaccine Status</label>
+                    <select class="form-select" id="vaccineStatus" required>
+                        <option value="true">Vaccinated</option>
+                        <option value="false">Not Vaccinated</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div id="response-message" class="mt-3"></div>
+        </div>
+    </div>
+
+    <footer class="text-center py-3">22MIC0107 © 2024</footer>
+    <script src="../scripts/updateCasesScripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

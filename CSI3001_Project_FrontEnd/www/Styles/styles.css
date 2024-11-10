@@ -1,0 +1,123 @@
+/* Global Body Styling */
+body {
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-brand,
+.navbar .navbar-nav .nav-link {
+  color: #007bff !important;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #0056b3 !important;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: #343a40;
+  font-weight: 600;
+}
+
+/* Buttons */
+button, .btn, .form-select, .form-control {
+  background-color: #007bff;
+  color: #ffffff;
+  border: 1px solid #007bff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover, .btn:hover, .form-select:hover, .form-control:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #002df7;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Responsive Tables */
+.table-responsive {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+/* Form Labels */
+label {
+  color: #343a40;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+}
+
+/* Table Styling */
+.table-blue {
+  color: #000000;
+}
+
+.table-blue thead {
+  background-color: #286fda;
+}
+
+.table-blue tbody tr:nth-of-type(odd) {
+  background-color: #00ff00;
+}
+
+.table-blue tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.table {
+  color: #000000;
+}
+
+.table thead {
+  background-color: #2669ce;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.text-primary {
+  color: #0d6efd !important;
+}
+
+.table-primary{
+  background-color: #007bff;
+}
+
+.table-primary {
+  --bs-table-bg: #cfe2ff;
+  --bs-table-striped-bg: #c5d7f2;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #bacbe6;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #bfd1ec;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #bacbe6;
+}
